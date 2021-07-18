@@ -41,6 +41,7 @@ int main() {
 				if (k[i] <= j) {
 					// if yes, then find the minimum value between the original number of
 					// coins and the new number of coins by using the current coin
+					// note: we are adding 1 because we are using this current coin
 					dp[i][j] = min(dp[i][j], 1 + dp[i][j - k[i]]);
 				}
 			}
